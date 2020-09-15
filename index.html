@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #canvas{
+            max-width: 100%;
+            max-width: 100%;
+        }
+        #hover_text {
+            font-family: 'Courier New';
+            font-size: 16px;
+            font-weight: bold;
+            /* color: white; */
+        }
+
+        #canvas:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- <p>Treatment :
+    <p id="treatment"></p>
+    </p>
+    <p>Normalized Closest RGB Distance : </p>
+    <p id="normalized_rgb"></p>
+    <p>Normalized Closest HSV Distance : </p>
+    <p id="normalized_hsv"></p> -->
+
+    <div class="div0">
+        <div class="div1">
+            <canvas id="canvas"></canvas>
+            <p>Pointer Position : </p>
+            <div id="status"></div><br>
+            <div id="color" style="width:30px;height:30px;"></div>
+
+            <p id="hex_codes"></p>
+            <p>Euclidean_Distance : </p>
+            <p id="euclidean_distance"></p>
+
+            <p>HSV Distance : </p>
+            <p id="hsv_distance"></p>
+
+            <p>Original Colour : </p>
+            <p id="original_clr"></p>
+
+            <p>Closest Colour : (HSV)</p>
+            <div id="closest_clr" style="width:30px;height:30px;"></div>
+
+            <p>Closest Colour Hexadecimal Code : (HSV)</p>
+            <p id="closest_clr_hexa"></p>
+
+            <p>Closest Colour : (RGB)</p>
+            <div id="closest_clr_rgb" style="width:30px;height:30px;"></div>
+
+            <p>Closest Colour Hexadecimal Code : (RGB)</p>
+            <p id="closest_clr_hexa_rgb"></p>
+
+
+            <!-- Dinamically changing position DIV :  -->
+            <div id="hover_text" style="width:auto;display:none;"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript" src="scripts/image_src.js"></script>
+<script type="text/javascript" src="scripts/colour_distances.js"></script>
+
+</html>
